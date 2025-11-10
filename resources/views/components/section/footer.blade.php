@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <img src="images/logo-icon.png" class="img-fluid rounded-circle" alt="">
+                <img src="assets/images/logo-icon.png" class="img-fluid rounded-circle" alt="">
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
