@@ -17,7 +17,7 @@ class HomePage extends Component
     {
         $flyers = Flyer::where('is_active', true)->get();
         $runnings = RunningText::all();
-        $sponsors = Sponsor::where('is_Active', true)->orderBy('no_urut', 'asc')->take(10)->get();
+        $sponsors = Sponsor::where('is_Active', true)->orderBy('no_urut', 'asc')->get();
         $messages = WelcomeMessage::where('is_active', true)->orderby('no_urut', 'asc')->get();
         return view('livewire.pages.home-page', [
             'sponsors' => $sponsors, 

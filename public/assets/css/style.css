@@ -2607,7 +2607,7 @@ p {
 
 #topnav .navigation-menu > li > a {
   display: block;
-  color: #fff;
+  color: #ffc200;
   font-size: 13px;
   background-color: transparent !important;
   font-weight: 700;
@@ -2627,7 +2627,7 @@ p {
 }
 
 #topnav .navigation-menu .has-submenu .menu-arrow {
-  border: solid #fff;
+  border: solid #ffc200;
   border-radius: 0.5px;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -3237,8 +3237,12 @@ p {
 }
 
 .bg-tes-gradient {
-  background-image: url(/images/bg-tes.png),
-    linear-gradient(160deg, #774a46, #f2db9c, #774a46);
+  background-image: url(/assets/images/background/bg-tes.png),
+    linear-gradient(160deg, #2B3990, #27AAE1, #2B3990);
+}
+
+.uppercase {
+  text-transform: uppercase !important;
 }
 
 .it-home {

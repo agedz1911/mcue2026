@@ -4,10 +4,10 @@
         <!-- Logo container-->
         <a class="logo" href="/">
             <span class="logo-light-mode">
-                <img src="assets/images/logo/logo-half-light.png" class="l-dark" height="36" alt="">
+                <img src="assets/images/logo/logo-light.png" class="l-dark" height="36" alt="">
                 <img src="assets/images/logo/logo-half-light.png" class="l-light" height="36" alt="">
             </span>
-            <img src="assets/images/logo/logo-dark.png" height="24" class="logo-dark-mode" alt="">
+            <img src="assets/images/logo/logo-light.png" height="24" class="logo-dark-mode" alt="">
         </a>
         <!--<div class="buy-button">
                     <a href="#">
@@ -34,16 +34,16 @@
         <div id="navigation">
             <!-- Navigation Menu-->
             <ul class="navigation-menu ">
-                <li><a href="#" class="sub-menu-item">Home</a></li>
+                <li><a href="/"  class="sub-menu-item">Home</a></li>
                 <li class="has-submenu parent-parent-menu-item">
                     <a href="javascript:void(0)" class="">Congress Information</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <!--<li class="has-submenu parent-menu-item"><a href="#welcome-message"> Welcome Message </a><span class="submenu-arrow"></span>
                                 </li>-->
-                        <li class="has-submenu parent-menu-item"><a href="#committee"> Committee </a><span
+                        <li class="has-submenu parent-menu-item"><a href="/organizing-committee"> Committee </a><span
                                 class="submenu-arrow"></span>
                         </li>
-                        <li class="has-submenu parent-menu-item"><a href="#committee"> Faculties </a><span
+                        <li class="has-submenu parent-menu-item"><a href="/faculties"> Faculties </a><span
                                 class="submenu-arrow"></span>
                         </li>
                     </ul>
