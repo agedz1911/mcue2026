@@ -9,7 +9,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('ASMIUA - Program at Glance')]
+#[Title('MCUE - Program at Glance')]
 class AtGlance extends Component
 {
     public $atglances;

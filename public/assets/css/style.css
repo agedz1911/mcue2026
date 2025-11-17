@@ -2162,7 +2162,7 @@ p {
 }
 
 .bg-overlay {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(248, 0, 0, 0.6);
   position: absolute;
   top: 0;
   right: 0;
@@ -2173,7 +2173,7 @@ p {
 }
 
 .bg-overlay-blue {
-  background-image: url(/images/bg-home.png), radial-gradient(#20466d, #030a27);
+  background-image: url(/assets/images/background/bg-tes.png), radial-gradient(#27AAE1, #262262);
   position: absolute;
   top: 0;
   right: 0;
@@ -3205,7 +3205,7 @@ p {
 }
 
 .bg-half {
-  padding: 184px 0 90px;
+  padding: 90px 0 90px;
   background-size: cover;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -5555,8 +5555,8 @@ p {
 }
 
 .nav-tabs .nav-link.active {
-  /* background-image: linear-gradient(40deg, #f2b321, #eed965, #dfa423); */
-  background-color: #fff;
+  background-image: linear-gradient(40deg, #262262, #27AAE1, #262262);
+  /* background-color: #fff; */
   color: #ffffff !important;
 }
 

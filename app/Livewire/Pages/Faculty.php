@@ -6,7 +6,7 @@ use App\Models\Faculty as ModelsFaculty;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('ASMIUA - Faculties')]
+#[Title('MCUE - Faculties')]
 class Faculty extends Component
 {
     public $searchTerm = "";

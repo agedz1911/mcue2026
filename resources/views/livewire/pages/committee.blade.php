@@ -1,41 +1,52 @@
 <div>
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
+    <section class="bg-half d-table w-100">
+        <div class="bg-overlay-blue "></div>
         <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Organizing Committee</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="speakers">
-        <div class="container">
-            <div class="speaker-inner">
-                <div class="sepaker-list">
-                    <div class="row justify-content-center text-center">
-                        @foreach ($uniqueCategories as $category)
-                        <h4 class="mb-1 mt-3"><span class="badge bg-kuning px-6 py-3 rounded">{{$category}}</span></h4>
-                        @foreach ($committees as $committee)
-                        @if ($committee->category == $category)
-                        <div class="col-lg-3 col-md-4 col-12 p-2 ">
-                            <div class="speaker-box  position-relative overflow-hidden text-white">
-                                <img class="speaker-image rounded img-fluid"
-                                    src="{{$committee->image ? asset('storage/' . $committee->image) : "
-                                    assets/images/speakers.jpg"}}" alt="{{$committee->name}}">
-                                <div class="card shadow-sm border-top-0 mt-1">
-                                    <h6><a class="text-blue" href="javascript:void(0)">{{$committee->name}}</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">{{$committee->title}}</span>
-                                </div>
-                            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <h4 class="title text-white"> Organizing Committee </h4>
+                        <div class="page-next">
+                            <nav aria-label="breadcrumb" class="d-inline-block">
+                                <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="">Congress Information</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Organizing Committee</li>
+                                </ul>
+                            </nav>
                         </div>
-                        @endif
-                        @endforeach
-                        @endforeach
                     </div>
-                </div>
+                </div> <!--end col-->
+            </div><!--end row-->
+        </div> <!--end container-->
+    </section><!--end section-->
+
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                @foreach ($uniqueCategories as $category)
+                <h4 class="mb-1 mt-3"><span class="">{{$category}}</span></h4>
+                @foreach ($committees as $committee)
+                @if ($committee->category == $category)
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="{{$committee->image ? asset('storage/' . $committee->image) : "
+                                    assets/images/speakers.jpg"}}" class="card-img-top" alt="{{$committee->name}}">
+                            <div class="overlay rounded-top"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5><a href="javascript:void(0)" class="card-title title text-dark">{{$committee->name}}</a></h5>
+                            <p class="text-muted readmore">Read More <i class="fa fa-angle-right align-middle"></i></p>
+                        </div>
+
+                    </div>
+                </div><!--end col-->
+                @endif
+                @endforeach
+                @endforeach
             </div>
+
         </div>
     </section>
 </div>
