@@ -34,39 +34,39 @@
         <div id="navigation">
             <!-- Navigation Menu-->
             <ul class="navigation-menu ">
-                <li><a href="/"  class="sub-menu-item">Home</a></li>
+                <li><a href="/" class="sub-menu-item {{ request()->is('/') ? 'text-primary' : '' }}">Home</a></li>
                 <li class="has-submenu parent-parent-menu-item">
-                    <a href="javascript:void(0)" class="">Congress Information</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)" class="{{ request()->is('organizing-committee') || request()->is('faculties') ? 'text-primary' : '' }}">Congress Information</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <!--<li class="has-submenu parent-menu-item"><a href="#welcome-message"> Welcome Message </a><span class="submenu-arrow"></span>
                                 </li>-->
-                        <li class="has-submenu parent-menu-item"><a href="/organizing-committee"> Committee </a><span
+                        <li class="has-submenu parent-menu-item {{ request()->is('organizing-committee') ? 'text-primary' : '' }}"><a href="/organizing-committee"> Committee </a><span
                                 class="submenu-arrow"></span>
                         </li>
-                        <li class="has-submenu parent-menu-item"><a href="/faculties"> Faculties </a><span
+                        <li class="has-submenu parent-menu-item {{ request()->is('faculties') ? 'text-primary' : '' }}"><a href="/faculties"> Faculties </a><span
                                 class="submenu-arrow"></span>
                         </li>
                     </ul>
                 </li>
 
                 <li class="has-submenu parent-parent-menu-item">
-                    <a href="#program" class="">Scientific Program</a><span class="menu-arrow"></span>
-                    <!--<ul class="submenu">
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Program at Glance </a><span class="submenu-arrow"></span></li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Schedule </a><span class="submenu-arrow"></span></li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Topics </a><span class="submenu-arrow"></span></li>
-                            </ul>-->
+                    <a href="javascript:void(0)" class="{{ request()->is('program-at-glance') || request()->is('scientific-schedule') ? 'text-primary' : '' }}">Scientific Program</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li class="has-submenu parent-menu-item "><a class="{{ request()->is('program-at-glance') ? 'text-primary' : '' }}" href="/program-at-glance"> Program at Glance </a><span class="submenu-arrow"></span></li>
+                        <li class="has-submenu parent-menu-item "><a class="{{ request()->is('scientific-schedule') ? 'text-primary' : '' }}" href="/scientific-schedule"> Scientific Schedule </a><span class="submenu-arrow"></span></li>
+                        <!-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Topics </a><span class="submenu-arrow"></span></li> -->
+                    </ul>
                 </li>
                 <li class="has-submenu parent-parent-menu-item">
-                    <a href="#registration" class="">Registration</a><span class="menu-arrow"></span>
+                    <a href="/registration" class="{{ request()->is('registration') ? 'text-primary' : '' }}">Registration</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li class="has-submenu parent-menu-item"><a href="#reg-info"> Registration Info </a><span
+                        <li class="has-submenu parent-menu-item"><a class="{{ request()->is('registration#reg-info') ? 'text-primary' : '' }}" href="/registration#reg-info"> Registration Info </a><span
                                 class="submenu-arrow"></span></li>
                     </ul>
                 </li>
 
                 <li class="has-submenu parent-parent-menu-item">
-                    <a href="#submission" class="">Abstract</a><span class="menu-arrow"></span>
+                    <a href="/submission" class="{{ request()->is('submission') ? 'text-primary' : '' }}">Abstract</a><span class="menu-arrow"></span>
                     <!--<ul class="submenu">
                                 <li class="has-submenu parent-menu-item"><a href="#">Video Competition</a><span class="submenu-arrow"></span></li>
                             </ul>-->

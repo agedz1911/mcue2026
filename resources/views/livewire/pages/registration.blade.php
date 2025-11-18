@@ -1,15 +1,31 @@
 <div>
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
+    <section class="bg-half d-table w-100">
+        <div class="bg-overlay-blue "></div>
         <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Registration</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <h4 class="title text-white"> Registration </h4>
+                        <div class="page-next">
+                            <nav aria-label="breadcrumb" class="d-inline-block">
+                                <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="">Registration</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Online Registration</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
             </div>
+            <!--end row-->
         </div>
+        <!--end container-->
     </section>
+    <!--end section-->
 
-    <section class="price bg-lightgrey">
+    <section class="section">
         <div class="container">
             <div class="price-inner">
                 <div class="price-title mb-7 w-lg-60 m-auto text-center">
@@ -65,7 +81,8 @@
                                     <tr>
                                         <th scope="row">{{$ms->title}}</th>
                                         <td class="text-center">
-                                            {{\Carbon\Carbon::parse($ms->date_early_bird)->format('l, M jS, Y')}}</td>
+                                            {{\Carbon\Carbon::parse($ms->date_early_bird)->format('l, M jS, Y')}}
+                                        </td>
                                         <td class="text-center">IDR
                                             @if(is_null($ms->early_bird_reg))
                                             TBA
@@ -102,7 +119,8 @@
                                     <tr>
                                         <th scope="row">{{$ws->title}}</th>
                                         <td class="text-center">
-                                            {{\Carbon\Carbon::parse($ws->date_early_bird)->format('l, M jS, Y')}}</td>
+                                            {{\Carbon\Carbon::parse($ws->date_early_bird)->format('l, M jS, Y')}}
+                                        </td>
                                         <td class="text-center">IDR
                                             @if(is_null($ws->early_bird_reg))
                                             TBA
@@ -157,7 +175,7 @@
         </div>
     </section>
 
-    <section class="ticket2 position-relative">
+    <section class="section" id="reg-info">
         <div class="container">
             <div class="ticket-inner  text-center position-relative">
                 <div class="row">

@@ -1,15 +1,31 @@
 <div>
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
+    <section class="bg-half d-table w-100">
+        <div class="bg-overlay-blue "></div>
         <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Submission</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <h4 class="title text-white"> Abstract </h4>
+                        <div class="page-next">
+                            <nav aria-label="breadcrumb" class="d-inline-block">
+                                <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="">Abstract</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Submission</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
             </div>
+            <!--end row-->
         </div>
+        <!--end container-->
     </section>
+    <!--end section-->
 
-    <section class="faq-popular-ques">
+    <section class="section">
         <div class="container">
             <div class="popular-ques">
                 <div class="row">

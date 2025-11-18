@@ -22,7 +22,7 @@
                 <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                     <!-- <li class="list-inline-item"><a href="https://instagram.com/pp.iaui" target="_blank" class="rounded bg-secondary"><i class="uil uil-instagram "></i></a></li> -->
 
-                    <li class="list-inline-item"><a href="mailto:18mcue@pharma-pro.com"
+                    <li class="list-inline-item"><a href="mailto:mcue2026@pharma-pro.com"
                             class="rounded bg-secondary"><i class="uil uil-envelope text-white"></i></a></li>
                     <li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=62816995230"
                             target="_blank" class="rounded bg-secondary"><i

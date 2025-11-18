@@ -27,27 +27,31 @@
 
     <section class="section">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center text-center">
                 @foreach ($uniqueCategories as $category)
-                <div class="col-lg-6">
-                    <div class="">
-                        <p class="mb-0 "><i class="uil uil-angle-double-right m-1"></i>{{$category}}</p>
-                        @foreach ($committees as $committee)
-                        @if ($committee->category == $category)
-                        <ul class="text-muted">
-                            <li>{{ $committee->name }}
-                                @if ($committee->title != null)
-                                <br>
-                                <span class="font-semibold">({{ $committee->title }})</span>
-                                @endif
-                            </li>
-                        </ul>
-                        @endif
-                        @endforeach
+                <h4 class="mb-1 mt-3"><span class="">{{$category}}</span></h4>
+                @foreach ($committees as $committee)
+                @if ($committee->category == $category)
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="{{$committee->image ? asset('storage/' . $committee->image) : "
+                                assets/images/speakers.jpg"}}" class="card-img-top" alt="{{$committee->name}}">
+                            <div class="overlay rounded-top"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5><a href="javascript:void(0)" class="card-title title text-dark">{{$committee->name}}</a>
+                            </h5>
+                            <p class="text-muted readmore">Read More <i class="fa fa-angle-right align-middle"></i></p>
+                        </div>
+
                     </div>
                 </div>
+                @endif
+                @endforeach
                 @endforeach
             </div>
+            
         </div>
     </section>
 </div>
