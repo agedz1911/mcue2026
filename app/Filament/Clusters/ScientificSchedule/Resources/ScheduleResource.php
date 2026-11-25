@@ -24,7 +24,7 @@ class ScheduleResource extends Resource
     protected static ?string $model = Schedule::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-list-bullet';
-
+    protected static ?string $label = 'Topics';
     protected static ?string $cluster = ScientificSchedule::class;
 
     public static function form(Form $form): Form

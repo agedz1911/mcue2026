@@ -1,4 +1,5 @@
 <div>
+<<<<<<< HEAD
     <section class="bg-half d-table w-100">
         <div class="bg-overlay-blue "></div>
         <div class="container">
@@ -14,6 +15,76 @@
                                     <li class="breadcrumb-item active" aria-current="page">Sciientific Schedule</li>
                                 </ul>
                             </nav>
+=======
+
+    <section class="relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+            <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Scientific Schedule</h2>
+            <div class="mt-7 h-1 w-20 bg-red-700"></div>
+        </div>
+    </section>
+    <x-section.breadcrumbs />
+    <div class="px-5 md:px-10 pt-0 mt-10 flex flex-col md:flex-row gap-4 justify-center">
+        <label class="input input-lg input-warning rounded-lg w-full max-w-6xl">
+            <i class="fa fa-search opacity-45 text-sm"></i>
+            <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
+        </label>
+        <div class="flex flex-col items-center text-center md:text-start md:items-start">
+            <button class="btn bg-[#C0809A] hover:bg-[#4E6690] hover:text-white  rounded-lg"><i
+                    class="fa fa-download"></i> Download PDF Schedule</button>
+            <span class="text-xs text-error italic">* The downloadable PDF schedule always reflects the most up-to-date information</span>
+        </div>
+    </div>
+
+    <section class="pt-10 pb-24 px-2 lg:px-5">
+        <div class="flex flex-col lg:flex-row justify-between gap-4">
+            <div class="drawer drawer-end block lg:hidden z-30">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer-4"
+                        class="drawer-button btn rounded-lg px-3"><i
+                            class="fa-solid fa-filter"></i> Filter</label>
+                </div>
+                <div class="drawer-side">
+                    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <div class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                        <!-- Sidebar content here -->
+                        <div class="my-auto">
+                            <h2 class="card-title">Filter</h2>
+                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                <legend class="fieldset-legend">Date</legend>
+                                <div class="flex items-center">
+                                    <select wire:model.live='date' class="select flex-grow">
+                                        <option value="0">Choose a date</option>
+                                        @foreach ($uniqDates as $date)
+                                        <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}
+                                        </option>
+                                        @endforeach
+                                    </select>
+                                    @if($date)
+                                    <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
+                                    @endif
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                <legend class="fieldset-legend">Session</legend>
+                                <div class="flex items-center">
+                                    <select wire:model.live='category' class="select flex-grow">
+                                        <option value="0">Choose a Session</option>
+                                        @foreach ($uniqCategories as $item)
+                                        <option value="{{ $item }}">{{ $item }}</option>
+                                        @endforeach
+                                    </select>
+                                    @if($category)
+                                    <button wire:click="resetCategory" class="btn btn-xs btn-error ml-2">X</button>
+                                    @endif
+                                </div>
+                            </fieldset>
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
                         </div>
                     </div>
                 </div>

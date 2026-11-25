@@ -7,7 +7,11 @@ use Illuminate\Support\Facades\Log;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+<<<<<<< HEAD
 #[Title('MCUE - Scientific Schedule')]
+=======
+#[Title('Scientific Schedule - MCUE 2027')]
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
 class Schedule extends Component
 {
     public $search = '';

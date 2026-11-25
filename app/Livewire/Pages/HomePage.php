@@ -10,7 +10,11 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
+<<<<<<< HEAD
 #[Title('19th MCUE')]
+=======
+#[Title('MCUE 2027 - Reconstruction Homecoming')]
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
 class HomePage extends Component
 {
     public function render()

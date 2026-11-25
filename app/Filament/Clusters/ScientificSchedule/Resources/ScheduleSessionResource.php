@@ -25,7 +25,7 @@ class ScheduleSessionResource extends Resource
     protected static ?string $model = ScheduleSession::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-pencil-square';
-    protected static ?string $label = 'Category Session';
+    protected static ?string $label = 'Name Session';
 
     protected static ?string $cluster = ScientificSchedule::class;
 

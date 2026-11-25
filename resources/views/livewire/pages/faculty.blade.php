@@ -21,6 +21,7 @@
         </div> <!--end container-->
     </section><!--end section-->
 
+<<<<<<< HEAD
     <section class="section">
         <div class="container">
             <div class="">
@@ -31,6 +32,26 @@
                     <input type="text" wire:model.live.debounce.500ms='searchTerm' class="form-control border"
                         placeholder="Search Faculties" aria-label="Search Faculties" aria-describedby="basic-addon1">
                 </div>
+=======
+    <section class="relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+            <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Faculties</h2>
+            <div class="mt-7 h-1 w-20 bg-red-700"></div>
+        </div>
+    </section>
+    <x-section.breadcrumbs />
+    <section class="mx-auto w-full px-5 md:px-10 pt-0 pb-10 md:py-20">
+        <div class="">
+            <div class="w-full px-3">
+                <label class="input input-warning rounded-xl input-lg w-full">
+                    <i class="fa-solid fa-search h-[1em] opacity-50"></i>
+                    <input wire:model.live.debounce.500ms="searchTerm" type="text" class="w-full" required
+                        placeholder="Search Faculties.." />
+                </label>
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
             </div>
 
             <div class="mt-5">

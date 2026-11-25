@@ -1,10 +1,15 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+=======
+<html class="scroll-smooth" data-theme="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<<<<<<< HEAD
     <title>{{ $title ?? 'MCUE 2026' }}</title>
     <meta name="description" content="18th Malang Continuing Urology Education" />
     <meta name="keywords" content="urology, urology education, malang urology, iaui" />
@@ -26,6 +31,21 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+=======
+    <title>{{ $title ?? 'MCUE 2027' }}</title>
+    <meta name="description" content="Malang Continuing Urology Education" />
+    <meta name="keywords" content="MCUE, Malang, Urology, Education, reconstructive urology" />
+    <meta name="author" content="AV-PRO" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom_new.css">
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
     <!--FontAwesome CSS-->
     <script src="https://kit.fontawesome.com/6d07745da9.js" crossorigin="anonymous"></script>
 </head>
@@ -49,6 +69,7 @@
 
 <body>
     <x-section.header />
+<<<<<<< HEAD
     {{ $slot }}
     <x-section.footer />
 
@@ -57,6 +78,18 @@
             data-feather="arrow-up" class="icons"></i></a>
     <!-- Back to top -->
     @livewireScripts
+=======
+
+    {{ $slot }}
+    <x-section.footer />
+
+    <!-- Back-to-top Button start -->
+    <button onclick="topFunction()" id="back-to-top"
+        class="fixed rounded z-10 bottom-5 end-5 bg-red-700 border-none shadow-none btn btn-sm hover:scale-105">
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
+    <!-- Back-to-top Button end -->
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
 
     <!-- javascript -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

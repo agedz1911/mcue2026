@@ -1,10 +1,30 @@
 <div>
+<<<<<<< HEAD
     <section class="banner page-banner position-relative pb-0">
         <div class="overlay">
         </div>
         <div class="container">
             <div class="page-title text-center position-relative py-11">
                 <h2 class="text-white text-uppercase">Free Paper Schedule</h2>
+=======
+
+    <section class="relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+            <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Free Paper Schedule</h2>
+            <div class="mt-7 h-1 w-20 bg-red-700"></div>
+        </div>
+    </section>
+    <x-section.breadcrumbs />
+    <section class="px-5 md:px-10 pt-0 pb-10 md:py-20">
+        <div class="mt-10">
+            <div class="text-center lg:text-start mb-5 md:mb-10">
+                <p class="mb-1 kuning">Free Paper</p>
+                <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for Free Paper<span class="text-[#008068]"> Presentation</span>
+                </h2>
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
             </div>
         </div>
     </section>

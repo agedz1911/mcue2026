@@ -6,7 +6,11 @@ use App\Models\Faculty as ModelsFaculty;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+<<<<<<< HEAD
 #[Title('MCUE - Faculties')]
+=======
+#[Title('Faculties - MCUE 2027')]
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
 class Faculty extends Component
 {
     public $searchTerm = "";

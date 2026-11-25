@@ -1,4 +1,5 @@
 <div>
+<<<<<<< HEAD
     <section class="bg-half d-table w-100">
         <div class="bg-overlay-blue "></div>
         <div class="container">
@@ -20,6 +21,16 @@
                 <!--end col-->
             </div>
             <!--end row-->
+=======
+
+    <section class="relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+            <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Registration</h2>
+            <div class="mt-7 h-1 w-20 bg-red-700"></div>
+>>>>>>> 4e48335 (feat: redesign for mcue 2027)
         </div>
         <!--end container-->
     </section>
