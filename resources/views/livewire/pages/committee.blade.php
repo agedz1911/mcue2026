@@ -1,27 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <section class="bg-half d-table w-100">
-        <div class="bg-overlay-blue "></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="page-next-level">
-                        <h4 class="title text-white"> Organizing Committee </h4>
-                        <div class="page-next">
-                            <nav aria-label="breadcrumb" class="d-inline-block">
-                                <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="">Congress Information</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Organizing Committee</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-=======
 
     <section class="relative overflow-hidden">
         <div
@@ -30,7 +7,7 @@
         <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
             <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Organizing Committee</h2>
             <div class="mt-7 h-1 w-20 bg-red-700"></div>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
+
         </div>
         <!--end container-->
     </section>

@@ -7,11 +7,8 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-<<<<<<< HEAD
-#[Title('MCUE - Organizing Committee')]
-=======
+
 #[Title('Organizing Committee - MCUE 2027')]
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
 
 class Committee extends Component
 {

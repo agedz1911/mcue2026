@@ -1,13 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
-        <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Free Paper Schedule</h2>
-=======
-
     <section class="relative overflow-hidden">
         <div
             class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
@@ -24,7 +15,6 @@
                 <p class="mb-1 kuning">Free Paper</p>
                 <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for Free Paper<span class="text-[#008068]"> Presentation</span>
                 </h2>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
             </div>
         </div>
     </section>
@@ -45,12 +35,12 @@
                                     <div class="accordion-item ">
                                         <p class="accordion-header p-4">
                                             <button class="accordion-button fw-semibold p-0 text-uppercase collapsed"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#{{$item->id}}"
-                                                aria-expanded="false" aria-controls="flush-{{$item->id}}">
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#presentation-guide-{{$item->id}}"
+                                                aria-expanded="false" aria-controls="presentation-guide-{{$item->id}}">
                                                 {{$item->title}}
                                             </button>
                                         </p>
-                                        <div id="{{$item->id}}" class="accordion-collapse collapse"
+                                        <div id="presentation-guide-{{$item->id}}" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body bg-lightgrey p-6">
                                                 {!! str($item->description)->markdown()->sanitizeHtml() !!}

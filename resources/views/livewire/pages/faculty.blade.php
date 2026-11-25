@@ -1,38 +1,4 @@
 <div>
-    <section class="bg-half d-table w-100">
-        <div class="bg-overlay-blue "></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="page-next-level">
-                        <h4 class="title text-white"> Faculties </h4>
-                        <div class="page-next">
-                            <nav aria-label="breadcrumb" class="d-inline-block">
-                                <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="">Congress Information</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Faculties</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div> <!--end col-->
-            </div><!--end row-->
-        </div> <!--end container-->
-    </section><!--end section-->
-
-<<<<<<< HEAD
-    <section class="section">
-        <div class="container">
-            <div class="">
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">
-                        <i class="fa-solid fa-search"></i>
-                    </span>
-                    <input type="text" wire:model.live.debounce.500ms='searchTerm' class="form-control border"
-                        placeholder="Search Faculties" aria-label="Search Faculties" aria-describedby="basic-addon1">
-                </div>
-=======
     <section class="relative overflow-hidden">
         <div
             class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
@@ -51,7 +17,6 @@
                     <input wire:model.live.debounce.500ms="searchTerm" type="text" class="w-full" required
                         placeholder="Search Faculties.." />
                 </label>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
             </div>
 
             <div class="mt-5">

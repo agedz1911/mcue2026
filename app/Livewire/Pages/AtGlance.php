@@ -4,27 +4,11 @@ namespace App\Livewire\Pages;
 
 use App\Models\atGlance as ModelsAtGlance;
 use App\Models\ScheduleSession;
-use App\Models\Time;
+use App\Models\DownloadSchedule;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-<<<<<<< HEAD
-#[Title('MCUE - Program at Glance')]
-class AtGlance extends Component
-{
-    public $atglances;
-    public $duaPuluhLima;
-    public $duaPuluhEnam;
-    public $duaPuluhTujuh;
-
-    public function mount()
-    {
-        $this->atglances = ScheduleSession::all();
-        $this->duaPuluhLima = $this->atglances->where('date', '2025-09-25')->sortBy('no_urut');
-        $this->duaPuluhEnam = $this->atglances->where('date', '2025-09-26')->sortBy('no_urut');
-        $this->duaPuluhTujuh = $this->atglances->where('date', '2025-09-27')->sortBy('no_urut');
-=======
 #[Title('Program at Glance - MCUE 2027')]
 class AtGlance extends Component
 {
@@ -51,7 +35,7 @@ class AtGlance extends Component
         $this->tujuh = $this->atglances->where('date', '2027-08-07')->sortBy('no_urut');
         $this->delapan = $this->atglances->where('date', '2027-08-08')->sortBy('no_urut');
 
-        $this->downloads = \App\Models\DownloadSchedule::all();
+        $this->downloads = DownloadSchedule::all();
     }
 
     private function scheduleDays(): array
@@ -84,7 +68,6 @@ class AtGlance extends Component
 
             return [...$day, 'rooms' => $rooms, 'timeSlots' => $timeSlots];
         }, $days);
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
     }
 
     public function render()

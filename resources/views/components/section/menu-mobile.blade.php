@@ -62,8 +62,8 @@
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
-            <a href="/sponsorship" wire:navigate
-                class="{{ request()->is('sponsorship') ? 'text-red-700' : '' }} justify-between font-normal hover:text-red-800 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-red-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Become a Sponsor
+            <a href="/sponsors" wire:navigate
+                class="{{ request()->is('sponsors') ? 'text-red-700' : '' }} justify-between font-normal hover:text-red-800 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-red-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Become a Sponsor
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
         {{-- <li>

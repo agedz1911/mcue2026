@@ -49,6 +49,7 @@
                     class="{{ request()->is('scientific-schedule') ? 'text-red-800' : '' }} justify-between hover:text-red-800">Scientific
                     Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
+        </ul>
     </div>
 
     <li>
@@ -81,6 +82,7 @@
                     class="{{ request()->is('submission') ? 'text-red-800' : '' }} justify-between hover:text-red-800">Abstract
                     Submission<i class="fa-solid fa-angle-right"></i></a>
             </li>
+        </ul>
     </div>
     {{-- <div class="dropdown dropdown-hover">
         <div tabindex="0"
@@ -104,8 +106,8 @@
             </li> 
     </div>--}}
     <li>
-        <a href="/sponsorship" wire:navigate
-            class="{{ request()->is('sponsorship') ? 'text-red-600' : 'text-white' }} hover:text-red-800 hover:underline">Become a Sponsor
+        <a href="/sponsors" wire:navigate
+            class="{{ request()->is('sponsors') ? 'text-red-600' : 'text-white' }} hover:text-red-800 hover:underline">Become a Sponsor
         </a>
     </li>
 

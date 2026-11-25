@@ -1,21 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <div class="table-responsive">
-        <table class="table table-hover table-light">
-            <tbody>
-                @foreach ($importantDates as $date)
-                <tr>
-                    <td><i class="uil uil-angle-right align-middle h4 mb-0"></i> {{$date->title}}: {{
-                            $date->date_end
-                            ? \Carbon\Carbon::parse($date->date)->format('d') . ' - ' .
-                            \Carbon\Carbon::parse($date->date_end)->format('d F, Y')
-                            : \Carbon\Carbon::parse($date->date)->format('d F, Y')
-                            }}</td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-=======
     <h2 class="mb-5 md:mb-8 text-3xl font-bold text-center uppercase ">Important <span
             class="text-red-800">Dates</span>
     </h2>
@@ -28,7 +11,7 @@
                 <hr />
                 @endif
                 <div class="timeline-middle">
-                    <i class="fa fa-calendar-check-o text-red-600 text-lg"></i>
+                    <i class="fa-regular fa-calendar-check text-red-600 text-lg"></i>
                 </div>
                 @if($index % 2 === 0)
                 <div class="timeline-start mb-10 md:text-end">
@@ -77,6 +60,5 @@
             </li>
             @endforeach
         </ul>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
     </div>
 </div>

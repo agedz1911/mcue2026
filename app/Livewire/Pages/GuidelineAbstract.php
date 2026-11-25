@@ -7,11 +7,9 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-<<<<<<< HEAD
-#[Title('MCUE - Submission')]
-=======
+
 #[Title('Submission - MCUE 2027')]
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
+
 class GuidelineAbstract extends Component
 {
     public function render()

@@ -1,13 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
-        <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Visiting</h2>
-=======
-
     <section class="relative overflow-hidden">
         <div
             class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
@@ -382,7 +373,6 @@
                     <img src="assets/images/bali/2.jpg" class="w-full rounded-lg shadow-lg "
                         alt="VR Presentation and conference">
                 </div>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
             </div>
         </div>
     </section>

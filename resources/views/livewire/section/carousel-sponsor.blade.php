@@ -7,7 +7,7 @@
                     <h2 class="mb-1 text-xl md:text-3xl font-bold uppercase">SPONSors</h2>
                 </div>
                 <div class="mt-10">
-                    <div class="mb-4 flex items-center justify-end gap-2 px-2" x-data="carouselSetupControls()">
+                    <div class="mb-4 flex items-center justify-end gap-2 px-2" x-data>
                         <button type="button"
                             class="btn btn-sm btn-outline border border-red-700 rounded-full"
                             @click="$dispatch('sponsor-carousel-prev')">
@@ -19,7 +19,33 @@
                             <i class="fa-solid text-red-700 fa-chevron-right"></i>
                         </button>
                     </div>
-                    <div x-data="carouselSetup()" x-init="startInterval()" @resize.window="handleResize()"
+                    <div x-data="{
+                            currentIndex: 0,
+                            totalItems: {{ $sponsors->count() }},
+                            effectiveVisibleItems: 1,
+                            interval: null,
+                            init() { this.handleResize(); this.startInterval(); },
+                            destroy() { this.stopInterval(); },
+                            handleResize() {
+                                this.effectiveVisibleItems = window.innerWidth >= 1024 ? 4 : (window.innerWidth >= 768 ? 2 : 1);
+                                this.currentIndex = Math.min(this.currentIndex, Math.max(0, this.totalItems - this.effectiveVisibleItems));
+                            },
+                            startInterval() {
+                                this.stopInterval();
+                                if (this.totalItems > this.effectiveVisibleItems) {
+                                    this.interval = setInterval(() => this.nextSlide(), 5000);
+                                }
+                            },
+                            stopInterval() { clearInterval(this.interval); this.interval = null; },
+                            nextSlide() {
+                                const lastIndex = Math.max(0, this.totalItems - this.effectiveVisibleItems);
+                                this.currentIndex = this.currentIndex >= lastIndex ? 0 : this.currentIndex + 1;
+                            },
+                            prevSlide() {
+                                const lastIndex = Math.max(0, this.totalItems - this.effectiveVisibleItems);
+                                this.currentIndex = this.currentIndex <= 0 ? lastIndex : this.currentIndex - 1;
+                            }
+                        }" @resize.window="handleResize(); startInterval()"
                         @mouseenter="stopInterval()" @mouseleave="startInterval()"
                         @sponsor-carousel-prev.window="prevSlide()" @sponsor-carousel-next.window="nextSlide()"
                         class="w-full mx-auto overflow-hidden bg-base-100 rounded-box px-4 py-8 md:px-6 md:py-12">
@@ -44,7 +70,7 @@
                     </div>
                 </div>
                 <div class="text-center my-10">
-                    <a class="btn btn-outline hover:bg-red-800 border border-red-700 rounded-xl uppercase" href="{{ route('sponsors')}}">VIEW
+                    <a class="btn btn-outline hover:bg-red-800 border border-red-700 rounded-xl uppercase" href="/sponsors">VIEW
                         MORE Sponsors</a>
                 </div>
             </div>

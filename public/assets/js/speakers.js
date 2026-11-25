@@ -147,6 +147,7 @@ const speakers = [
 ];
 
 const speakersContainer = document.getElementById("speakers-container");
+if (speakersContainer) {
 const row = document.createElement("div");
 row.classList.add("row");
 speakers.forEach((speaker) => {
@@ -168,3 +169,4 @@ speakers.forEach((speaker) => {
 });
 
 speakersContainer.appendChild(row);
+}

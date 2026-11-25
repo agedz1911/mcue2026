@@ -1,28 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <section class="bg-half d-table w-100">
-        <div class="bg-overlay-blue "></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <div class="page-next-level">
-                        <h4 class="title text-white"> Abstract </h4>
-                        <div class="page-next">
-                            <nav aria-label="breadcrumb" class="d-inline-block">
-                                <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="">Abstract</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Submission</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-=======
-
     <section class="relative overflow-hidden">
         <div
             class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
@@ -30,7 +6,6 @@
         <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
             <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Abstract Submission</h2>
             <div class="mt-7 h-1 w-20 bg-red-700"></div>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
         </div>
         <!--end container-->
     </section>
@@ -54,12 +29,12 @@
                                         <p class="accordion-header p-4">
                                             <button class="accordion-button fw-semibold p-0 text-uppercase collapsed"
                                                 type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#{{$abstract->id}}" aria-expanded="false"
-                                                aria-controls="flush-{{$abstract->id}}">
+                                                data-bs-target="#abstract-{{$abstract->id}}" aria-expanded="false"
+                                                aria-controls="abstract-{{$abstract->id}}">
                                                 {{ $abstract->title }}
                                             </button>
                                         </p>
-                                        <div id="{{$abstract->id}}" class="accordion-collapse collapse"
+                                        <div id="abstract-{{$abstract->id}}" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body bg-lightgrey p-6">{!!
                                                 str($abstract->description)->markdown()->sanitizeHtml() !!}</div>
@@ -117,12 +92,12 @@
                                     <div class="accordion-item ">
                                         <p class="accordion-header p-4">
                                             <button class="accordion-button collapsed fw-semibold p-0" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#{{$video->id}}"
+                                                data-bs-toggle="collapse" data-bs-target="#video-{{$video->id}}"
                                                 aria-expanded="false" aria-controls="{{$video->id}}">
                                                 {{$video->title}}
                                             </button>
                                         </p>
-                                        <div id="{{$video->id}}" class="accordion-collapse collapse"
+                                        <div id="video-{{$video->id}}" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body bg-lightgrey p-6">{!!
                                                 str($video->description)->markdown()->sanitizeHtml() !!}</div>
@@ -155,12 +130,12 @@
                                     <div class="accordion-item ">
                                         <p class="accordion-header p-4">
                                             <button class="accordion-button fw-semibold p-0 text-uppercase collapsed"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#{{$eduvideo->id}}"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#education-video-{{$eduvideo->id}}"
                                                 aria-expanded="false" aria-controls="flush-{{$eduvideo->id}}">
                                                 {{$eduvideo->title}}
                                             </button>
                                         </p>
-                                        <div id="{{$eduvideo->id}}" class="accordion-collapse collapse"
+                                        <div id="education-video-{{$eduvideo->id}}" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body bg-lightgrey p-6">
                                                 {!!str($eduvideo->description)->markdown()->sanitizeHtml() !!}
@@ -177,9 +152,9 @@
                             <div class="form-title mb-4">
                                 <h2 class="mb-2"> Upload <span class="kuning">Video & Flyer</span></h2>
                                 <small>*Instruction video or flyer submission <br>
-                                    <span class="pink" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    <button class="pink" type="button" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal"> Read More <i
-                                            class="fa-solid fa-angles-right"></i></span></small>
+                                            class="fa-solid fa-angles-right"></i></button></small>
                             </div>
                             <div class="div d-grid">
                                 <a href="https://expo.virconex-id.com/submit_video/edu_video_asmiua2025/" class="btn mb-5"><i class="fa-solid fa-upload me-1"></i> Upload Video & Flyer

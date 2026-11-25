@@ -8,11 +8,8 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-<<<<<<< HEAD
-#[Title('MCUE - Registration')]
-=======
 #[Title('Registration - MCUE 2027')]
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
+
 class Registration extends Component
 {
     public $regInfos;

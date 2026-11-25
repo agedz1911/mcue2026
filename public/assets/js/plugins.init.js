@@ -238,7 +238,9 @@ try {
 //=========================================//
 
 try {
-    if(document.getElementById("days")){
+    if(document.getElementById("days") && document.getElementById("hours") &&
+        document.getElementById("mins") && document.getElementById("secs") &&
+        document.getElementById("end")){
         // The data/time we want to countdown to
         var eventCountDown = new Date("December 25, 2022 16:37:52").getTime();
 

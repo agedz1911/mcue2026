@@ -10,6 +10,27 @@ body {
     font-optical-sizing: auto;
 }
 
+[x-cloak] {
+    display: none !important;
+}
+
+.legacy-content .modal.fade.show {
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.legacy-content .section {
+    padding-block: 4rem;
+}
+
+.legacy-content :is(.bg-white, .bg-lightgrey, .modal-content) {
+    color: #1f2937;
+}
+
+.legacy-content .bg-lightgrey {
+    background-color: #f3f4f6;
+}
+
 .tulisan {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;

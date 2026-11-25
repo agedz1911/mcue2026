@@ -10,11 +10,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-<<<<<<< HEAD
-#[Title('19th MCUE')]
-=======
 #[Title('MCUE 2027 - Reconstruction Homecoming')]
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
 class HomePage extends Component
 {
     public function render()
@@ -24,7 +20,7 @@ class HomePage extends Component
         $sponsors = Sponsor::where('is_Active', true)->orderBy('no_urut', 'asc')->get();
         $messages = WelcomeMessage::where('is_active', true)->orderby('no_urut', 'asc')->get();
         return view('livewire.pages.home-page', [
-            'sponsors' => $sponsors, 
+            'sponsors' => $sponsors,
             'messages' => $messages,
             'runnings' => $runnings,
             'flyers' => $flyers,

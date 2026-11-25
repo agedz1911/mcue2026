@@ -1,5 +1,12 @@
 <p align="center">MCUE 2026</p>
 
+## Frontend styles
+
+The shared layout loads Tailwind CSS and daisyUI from their CDNs. Legacy pages also use
+`public/assets/css/bootstrap-scoped.css`, generated from the local Bootstrap stylesheet
+inside `@scope (.legacy-content)` so it does not override the shared navigation or home page.
+Regenerate the scoped stylesheet when updating `bootstrap.min.css`.
+
 
 
 ## Contributing

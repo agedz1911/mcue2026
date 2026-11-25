@@ -1,13 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
-        </div>
-        <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Welcome Message</h2>
-            </div>
-=======
     <section class="relative overflow-hidden">
         <div
             class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(65,14,14,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(71,41,41,0.95),transparent_45%)]">
@@ -15,7 +6,6 @@
         <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
             <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Welcome Message</h2>
             <div class="mt-7 h-1 w-20 bg-red-700"></div>
->>>>>>> 4e48335 (feat: redesign for mcue 2027)
         </div>
     </section>
 
@@ -44,7 +34,7 @@
                             <div class="general-ques-right">
                                 <div class="section-title pb-4 text-center text-lg-start">
                                     {!! str($message->description)->markdown()->sanitizeHtml() !!}
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                     </div>
