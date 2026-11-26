@@ -28,26 +28,9 @@
 
 
 
-<!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFPLHEGVD1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-MFPLHEGVD1');
-</script> -->
-
-
-
 <body>
     <x-section.header />
-    <div @class(['legacy-content' => !request()->routeIs('home', 'program-at-glance')])>
-        {{ $slot }}
-    </div>
+    {{ $slot }}
     <x-section.footer />
 
     <!-- Back-to-top Button start -->

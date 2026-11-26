@@ -77,7 +77,7 @@
                         <i class="fa-solid fa-file-download mr-1 text-xs" aria-hidden="true"></i>
                         Download Announcement
                     </a>
-                    <a href="/registration" wire:navigate
+                    <a 
                         class="btn btn-outline rounded-xl hover:border-red-800 hover:bg-red-800">
                         <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                         Register Now
@@ -245,11 +245,11 @@
             </div>
 
             <div class="mt-5 grid grid-cols-1 justify-items-center gap-2 md:grid-cols-3">
-                <img src="{{ asset('assets/images/surabaya/2.jpg') }}"
+                <img src="{{ asset('assets/images/malang/4.jpg') }}"
                     class="max-h-96 w-full rounded-xl object-cover shadow-md" alt="Venue">
-                <img src="{{ asset('assets/images/surabaya/3.jpg') }}"
+                <img src="{{ asset('assets/images/malang/5.jpg') }}"
                     class="h-full max-h-96 w-full rounded-xl object-cover shadow-md" alt="Venue">
-                <img src="{{ asset('assets/images/surabaya/1.jpg') }}"
+                <img src="{{ asset('assets/images/malang/6.jpg') }}"
                     class="h-full max-h-96 w-full rounded-xl object-cover object-top shadow-md" alt="Venue">
             </div>
         </div>

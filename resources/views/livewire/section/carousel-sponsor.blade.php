@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="text-center my-10">
-                    <a class="btn btn-outline hover:bg-red-800 border border-red-700 rounded-xl uppercase" href="/sponsors">VIEW
+                    <a class="btn btn-outline hover:bg-red-800 border border-red-700 rounded-xl uppercase" >VIEW
                         MORE Sponsors</a>
                 </div>
             </div>

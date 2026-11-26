@@ -5,7 +5,7 @@
                 <i class="fa fa-user inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Secretariat</div>
-            <div class="stat-desc"></div>
+            <div class="stat-desc">Ms. Evi Dearny</div>
         </div>
 
         <div class="stat">
@@ -32,22 +32,22 @@
                 <i class="fa fa-envelope inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Email</div>
-            <div class="stat-desc hover:underline hover:text-primary"><a href="#">@</a></div>
+            <div class="stat-desc hover:underline hover:text-primary"><a href="mailto:mcue-isoru2027@pharma-pro.com">mcue-isoru2027@pharma-pro.com</a></div>
         </div>
 
         <div class="stat">
             <div class="stat-figure text-red-700">
-                <i class="fa fa-whatsapp inline-block text-4xl stroke-current"></i>
+                <i class="fa-brands fa-whatsapp inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Whatsapp</div>
             <div class="stat-desc">
-                <a class="hover:underline hover:text-primary" target="_blank" href="#"> @ </a> <br>
+                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+628111018517">+62 811-1018-517</a> <br>
                 <!-- <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6285215510055"> +62 852-1551-0055 (Isma) </a> -->
             </div>
         </div>
         <div class="stat">
             <div class="stat-figure text-red-700">
-                <i class="fa fa-instagram inline-block text-4xl stroke-current"></i>
+                <i class="fa-brands fa-instagram inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Instagram</div>
             <div class="stat-desc">

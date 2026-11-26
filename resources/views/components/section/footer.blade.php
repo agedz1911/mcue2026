@@ -11,33 +11,33 @@
             <div class="py-5 mt-3">
                 <ul class="m-0 p-0 flex flex-row gap-5 lg:gap-3">
                     <li class=" rounded-md p-2 w-10 bg-red-700 hover:bg-red-900 tooltip-bottom tooltip"
-                        data-tip="ashno2027@pharma-pro.com">
-                        <a href="mailto:ashno2027@pharma-pro.com" class="">
+                        data-tip="mcue-isoru2027@pharma-pro.com">
+                        <a href="mailto:mcue-isoru2027@pharma-pro.com" class="">
                             <i class="fa-solid fa-envelope-open-text text-xl"></i>
                         </a>
                     </li>
                     <li class=" rounded-md p-2 w-10 bg-red-700 hover:bg-red-900 tooltip-bottom tooltip"
                         data-tip="+6221 6386 9502">
                         <a href="tel:+622163869502" class="">
-                            <i class="fa fa-phone text-xl"></i>
+                            <i class="fa-solid fa-phone text-xl"></i>
                         </a>
                     </li>
                     <li class=" rounded-md p-2 w-10 bg-red-700 hover:bg-red-900 tooltip-bottom tooltip"
-                        data-tip="+62 822-7783-2431">
-                        <a href="tel:+6282277832431" class="">
-                            <i class="fa fa-mobile-screen text-xl"></i>
+                        data-tip="+62 811-1018-517">
+                        <a href="tel:+628111018517" class="">
+                            <i class="fa-solid mx-auto fa-mobile-screen text-xl"></i>
                         </a>
                     </li>
                     <li class=" rounded-md p-2 w-10 bg-red-700 hover:bg-red-900 tooltip-bottom tooltip"
-                        data-tip="+62 822-7783-2431">
-                        <a href="https://wa.me/+6282277832431" class="">
-                            <i class="fa fa-whatsapp text-xl"></i>
+                        data-tip="+62 811-1018-517">
+                        <a href="https://wa.me/+628111018517" class="">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
                         </a>
                     </li>
 
                     <li class=" rounded-md p-2 w-10 bg-red-700 hover:bg-red-900 tooltip-bottom tooltip" data-tip="@">
                         <a href="javascript:void(0)" class="">
-                            <i class="fa fa-instagram text-xl"></i>
+                            <i class="fa-brands fa-instagram text-xl"></i>
                         </a>
                     </li>
                 </ul>
@@ -59,16 +59,16 @@
     <div class="py-5 md:py-10 mx-auto w-full max-w-2xl">
         <ul class="p-0 m-0 flex flex-row flex-wrap gap-4 lg:gap-6 justify-center">
             <li class="text-sm font-normal hover:text-red-700 hover:underline"><a
-                    href="{{route('organizing-committee')}}">Committee</a></li>
+                    >Committee</a></li>
             <li class="text-sm font-normal hover:text-red-700 hover:underline"><a
-                    href="{{route('faculties')}}">Faculties</a></li>
+                    >Faculties</a></li>
             <li class="text-sm font-normal hover:text-red-700 hover:underline"><a
-                    href="{{route('program-at-glance')}}">Schedule</a></li>
+                    >Schedule</a></li>
             <li class="text-sm font-normal hover:text-red-700 hover:underline"><a
-                    href="{{route('registration')}}">Registration</a></li>
+                    >Registration</a></li>
             <li class="text-sm font-normal hover:text-red-700 hover:underline"><a
-                    href="{{route('submission')}}">Submission</a></li>
-            <li class="text-sm font-normal hover:text-red-700 hover:underline"><a href="{{route('sponsors')}}">Become a
+                    >Submission</a></li>
+            <li class="text-sm font-normal hover:text-red-700 hover:underline"><a >Become a
                     Sponsor</a></li>
 
         </ul>

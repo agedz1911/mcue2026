@@ -37,16 +37,15 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 align-items-center">
             <div class="flex flex-col gap-4">
                 <div class="rounded-xl bg-white shadow-lg">
-                    <img src="assets/images/surabaya/1.jpg" class="w-full rounded-xl sepia-25" alt="surabaya 1">
+                    <img src="{{asset('assets/images/malang/1.jpg')}}" class="w-full rounded-xl sepia-50" alt="surabaya 1">
                 </div>
                 <div class="rounded-xl bg-white shadow-lg">
-                    <img src="assets/images/surabaya/2.jpg" class="w-full rounded-xl sepia-50" alt="surabaya 2">
+                    <img src="{{asset('assets/images/malang/2.jpg')}}" class="w-full rounded-xl " alt="surabaya 2">
                 </div>
             </div>
             <div class="rounded-xl bg-white shadow-lg">
-                <img src="assets/images/surabaya/3.jpg" class="w-full rounded-xl object-cover h-full sepia-25"
+                <img src="{{asset('assets/images/malang/3.jpg')}}" class="w-full rounded-xl object-cover h-full sepia-25"
                     alt="surabaya 3">
-
             </div>
         </div>
     </div>
